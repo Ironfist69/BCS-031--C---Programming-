@@ -1,0 +1,44 @@
+this point
+class base {
+    public: int x;
+    base(int x) {
+        this->x=x;
+    }
+}
+void print () {
+    cout<<this->x;
+}
+main () {
+    base obj(10);
+    obj.print();
+}
+void
+class wall {
+    int height, length;
+    public:
+        wall(int hgt, int len) {
+            height=hgt;
+            length=len;
+        }
+};
+void wall(wall& obj) {
+    height=obj.height;
+    length=obj.length;
+}
+int calArea() {
+    return height*length;
+}
+main () {
+    wall wall1(10,6);
+}
+
+fun overloading
+void add (int a,int b) {
+
+}
+void add (double a, double b) {
+
+}
+op overloading
+void add(int a,int b) {}
+void add(int a,int b,int c) {}

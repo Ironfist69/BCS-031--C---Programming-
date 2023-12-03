@@ -1,3 +1,21 @@
+complex no
+class complex {
+    int real,img;
+    public:complex(int i=0,int r=0){ real=r;img=i}
+};
+complex operator+(complex const& obj) {complex res; res.real=real+obj.real; res.img=img+obj.img;}
+void print() {cout<<real<<+<<img<<i;}
+main(){complex c1(6,9);c2(1,0);c3=c1+c2;c3.print()}
+friend class
+class base{
+    int pri;
+    public: int pub; base() {pri=10;pub=1;}
+    friend class withbeni;
+};
+class withbeni{
+    public:void print(base& obj){cout<<pri;cout<<pub;}
+};
+main () {base call;withbeni fr;fr.print(call);}
 this point
 class base {
     public: int x;

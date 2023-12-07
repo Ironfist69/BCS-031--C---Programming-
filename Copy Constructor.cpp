@@ -12,12 +12,17 @@ class Wall {
         height=obj.height;
     }
     int calArea() {
-        return length*height;
+        int area=length*height;
+        cout<<"Area: "<<area<<" sq.unit"<<endl;
     }
 };
 int main () {
     Wall wall_1(10,3);
     Wall wall_2(4,18);
     Wall wall_3(20,64);
+    wall_1.calArea();
+    wall_2.calArea();
+    wall_3.calArea();
+    system("pause");
     return 0;
 }

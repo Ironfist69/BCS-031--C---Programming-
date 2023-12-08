@@ -1,24 +1,21 @@
 #include<iostream>
-using namespace std;
-
-class Base {
-        int private_var;     //by default its under private access specifier
+class base {
+    private: int private_var;
+    protected: int protected_var;
     public:
-        int public_var;
-    Base () {
-        private_var = 10;
-        public_var = 13;
+    base () {
+        private_var=10;
+        protected_var=59;
     }
-    friend void frFunction(Base& obj);      //Friend function declaration   
+    friend void frFun(base& obj);
 };
-void frFunction (Base& obj) {
-    cout<<"Private variable: "<<obj.private_var<<endl;        //printing these
-    cout<<"Public variable: "<<obj.public_var<<endl;
+void frFun(base& obj) {
+    std::cout<<"Private: "<<obj.private_var<<std::endl;
+    std::cout<<"Protected: "<<obj.protected_var<<std::endl;
 }
-
-int main () {
-    Base calling;
-    frFunction(calling);
+main () {
+    base calling;
+    frFun(calling);
     system("pause");
     return 0;
 }
